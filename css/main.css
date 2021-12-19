@@ -24,6 +24,7 @@ nav {
   color: #fff;
   padding: 111.5px 44.6px 66.9px 44.6px;
   /* height: 100vw; */
+  position: relative;
 }
 .hero-section .text-col {
   font-size: 20px;
@@ -76,19 +77,22 @@ nav {
   max-width: 360px;
   margin-top: 20px;
 }
-.hero-section .text-col .d-flex div {
-  /* margin: auto; */
-}
-.hero-section .text-col .d-flex img {
-  /* width: 277.77px; */
-  height: 50px;
-  /* padding: 0 20px; */
-  margin: auto;
-}
-.hero-section .text-col .d-flex .mtn {
-  width: 50px;
-  /* padding: 0 20px; */
+.hero-section .hero-flex-image {
+  /* height: 50px; */
   /* border: solid; */
+  margin-top: 30px;
+}
+.hero-section .hero-flex-image .mtn {
+  width: 50px;
+}
+.hero-section .hero-flex-image div {
+  margin: auto 10px;
+  /* border: solid red; */
+}
+.hero-section .hero-flex-image .mtn-div {
+  border-left: solid 1px;
+  /* border: solid pink; */
+  padding-left: 30px;
 }
 .hero-section .img-col {
   /* border: solid; */
@@ -104,7 +108,74 @@ nav {
   z-index: 1;
   /* width: 100%; */
 }
-
+@media (max-width: 414px) {
+  .hero-section .text-col {
+    font-size: 16px;
+  }
+  .hero-section .text-col h1 {
+    /* color: red; */
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .hero-section .hero-flex-image {
+    margin: 0;
+  }
+  .hero-section .hero-flex-image img {
+    height: 34px;
+    margin: 0;
+  }
+  .hero-section .hero-flex-image div {
+    margin: auto 0;
+  }
+  .hero-section .hero-flex-image .mtn {
+    width: 34px;
+  }
+}
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 100px 0px 11.76px 0px;
+  }
+  .hero-section .text-col {
+    padding: 0;
+  }
+  .hero-section .save-image-div img {
+    width: 100%;
+  }
+  .hero-section .text-col h1 {
+    width: auto;
+  }
+  .hero-section .row {
+    display: inline;
+  }
+  .hero-section .img-col {
+    position: static;
+    /* border: solid; */
+    width: 100%;
+  }
+  .hero-section .img-col img {
+    position: static;
+    width: 100%;
+  }
+  .hero-section .hero-flex-image {
+    height: 50px;
+    margin: auto;
+    margin: 10px 0px 10px 10px;
+    width: 80%;
+  }
+  .hero-section .hero-flex-image img {
+    margin: 0;
+  }
+  .hero-section .hero-flex-image div {
+    margin: auto 5px;
+  }
+  .hero-section .hero-flex-image .mtn-div {
+    border-left: solid 1px;
+    padding-left: 20px;
+  }
+  .hero-section .hero-flex-image .mtn {
+    width: 34px;
+  }
+}
 /* ===== plan section style ===== */
 .plan {
   background-color: rgb(24, 23, 31);
@@ -126,18 +197,16 @@ nav {
   line-height: 24px;
   margin: 18px 0;
 }
-.plan .select-plan-btn-div {
-  /* color: #fff; */
-  /* text-align: center; */
-  /* border: solid; */
-}
+
 .plan .select-plan-btn-div .select-plan-btn {
   background-color: #fff;
   display: inline-flex;
   padding: 13px;
   border-radius: 100px;
   width: 284px;
-  margin: 0 10px;
+  /* margin: 5px 10px; */
+  margin: 10px auto;
+  /* border: solid red; */
 }
 .plan .select-plan-btn-div .select-plan-btn input {
   margin: auto 20px;
@@ -149,6 +218,26 @@ nav {
 /* plan card */
 .plan-card-div {
   display: inline-flex;
+}
+@media (max-width: 992px) {
+  .plan {
+    padding: 60px 5px;
+  }
+  .plan h1 {
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+  .plan p {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  .plan .select-plan-btn-div {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .plan-card-div {
+    display: inline-block;
+  }
 }
 .plan-card-div .plan-card {
   background-color: #fff;
@@ -284,6 +373,25 @@ nav {
   text-align: center;
   vertical-align: top;
   border: solid 1px grey;
+}
+@media (max-width: 992px) {
+  .how-to-pay {
+    padding: 60px 10px;
+  }
+  .how-to-pay h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin-bottom: 20px;
+  }
+  .how-to-pay .list-div {
+    /* background-color: #000; */
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .how-to-pay .table-div {
+    overflow-x: scroll;
+  }
 }
 /*  Accordion section style */
 /* Style the buttons that are used to open and close the accordion panel*/
