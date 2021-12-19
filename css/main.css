@@ -12,6 +12,31 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 3;
+  position: relative;
+}
+nav img {
+  width: 30%;
+  min-width: 100px;
+  max-width: 200px;
+}
+nav .link-div {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+nav a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: solid 1px;
+  border-radius: 30px;
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  height: 30px;
+  margin: auto 10px;
+  line-height: 14.4px;
+  font-weight: 600;
+  font-size: 12px;
 }
 /* ===== hero section style ===== */
 .hero-section {
